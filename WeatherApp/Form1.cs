@@ -13,7 +13,7 @@ namespace WeatherApp
 
         private async void Form1_Load(object sender, EventArgs e)
         {
-            WebRequest request = WebRequest.Create("http://api.openweathermap.org/data/2.5/weather?q=Moscow&APPID=ecc5a526d42be4c17efbe2ba1b3b1f6c");
+            WebRequest request = WebRequest.Create("http://api.openweathermap.org/data/2.5/weather?q=Gomel&APPID=ecc5a526d42be4c17efbe2ba1b3b1f6c");
        
         request.Method = "POST";
         request.ContentType = "application/x-www-urlencoded";

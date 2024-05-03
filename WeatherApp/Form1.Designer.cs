@@ -33,9 +33,12 @@
             // 
             // richTextBox1
             // 
+            richTextBox1.BackColor = SystemColors.WindowFrame;
+            richTextBox1.Font = new Font("Segoe UI", 8F);
+            richTextBox1.ForeColor = Color.Lime;
             richTextBox1.Location = new Point(2, 2);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(332, 79);
+            richTextBox1.Size = new Size(332, 61);
             richTextBox1.TabIndex = 0;
             richTextBox1.Text = "";
             // 
