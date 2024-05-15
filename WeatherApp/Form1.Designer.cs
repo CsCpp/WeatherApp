@@ -38,7 +38,7 @@
             richTextBox1.ForeColor = Color.Lime;
             richTextBox1.Location = new Point(2, 2);
             richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(332, 61);
+            richTextBox1.Size = new Size(402, 79);
             richTextBox1.TabIndex = 0;
             richTextBox1.Text = "";
             // 
@@ -46,7 +46,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(336, 228);
+            ClientSize = new Size(407, 228);
             Controls.Add(richTextBox1);
             Name = "Form1";
             Text = "Form1";
