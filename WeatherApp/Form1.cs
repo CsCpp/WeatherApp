@@ -1,6 +1,7 @@
 using System.Net;
 using Newtonsoft.Json;
 using System.IO;
+using System.Drawing;
 
 namespace WeatherApp
 {
@@ -35,13 +36,19 @@ namespace WeatherApp
             {
                 panel1.BackgroundImage = oW.weather[0].Icon;
             }
-            catch (Exception ex)
-            {
+            catch (Exception) { }
 
-               
-            }
-          
-        
+            label1.Text = oW.weather[0].main;
+            label2.Text = oW.weather[0].description;
+            label3.Text = "Средняя температура: " + oW.main.temp.ToString("0.##") + "°C";
+            label6.Text = "Скорость ветра: " + oW.wind.speed.ToString() + "м\\с";
+            label7.Text = "Направление ветра: " + oW.wind.deg.ToString();
+            label4.Text = "Влажность: " + oW.main.humidity.ToString()+"%";
+            label5.Text= "Давление: "+((int)oW.main.pressure).ToString()+ "mm";
+            
+                    
+
+
         }
     }
 }
