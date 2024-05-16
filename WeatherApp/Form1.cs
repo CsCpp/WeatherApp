@@ -29,6 +29,18 @@ namespace WeatherApp
             }
             response.Close();
             richTextBox1.Text = answer;
+
+            OpenWeather.OpenWeather oW = JsonConvert.DeserializeObject<OpenWeather.OpenWeather>(answer);
+            try
+            {
+                panel1.BackgroundImage = oW.weather[0].Icon;
+            }
+            catch (Exception ex)
+            {
+
+               
+            }
+          
         
         }
     }
